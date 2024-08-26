@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_app/authentication_page_tutorial/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,46 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-            child: Wrap(
-          direction: Axis.horizontal,
-          children: [
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.red,
-            ),
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.indigo,
-            ),
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.purple,
-            ),
-            Container(
-              height: 80,
-              width: 80,
-              color: Colors.purple,
-            )
-          ],
-        )),
-      ),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }
